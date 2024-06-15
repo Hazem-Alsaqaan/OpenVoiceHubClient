@@ -1,0 +1,12 @@
+.tasks-container{
+    flex-grow: 1;
+    background-color: var(--whiteColor);
+    padding: 15px;
+
+}
+
+.tasks-container .task-boxes-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}

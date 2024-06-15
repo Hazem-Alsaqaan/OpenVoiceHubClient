@@ -1,0 +1,29 @@
+.side-bar{
+    background-color: var(--gray50);
+    padding: 15px;
+}
+
+.side-bar .side-links li {
+    margin-bottom: 16px;
+    padding: 5px;
+}
+.side-bar .side-links li a{
+    display: flex;
+    align-items: center;
+}
+.side-bar .side-links li a p{
+    margin-left: 3px;
+}
+.side-bar .side-links li a:hover{
+    color: var(--mainColor400);
+    transition-duration: 300ms;
+}
+@media(max-width:400px){
+    .side-bar .side-links li a p{
+        display: none;
+    }
+    .side-bar .side-links li a svg{
+        width: 28px;
+        height: 28px;
+    }
+}

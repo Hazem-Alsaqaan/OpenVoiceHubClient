@@ -1,9 +1,12 @@
+import SideBar from "../../components/side.bar/SideBar"
+import TasksContainer from "../../components/tasks.container/TasksContainer"
 import "./HomePage.css"
 
 const HomePage = ()=>{
     return(
-        <div>
-            <h1>Open Voice Hube Tasks</h1>
+        <div className="home-page container">
+            <SideBar/>
+            <TasksContainer/>
         </div>
     )
 }

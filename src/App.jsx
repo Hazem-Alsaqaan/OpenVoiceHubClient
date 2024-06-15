@@ -3,6 +3,7 @@ import './App.css'
 import HomePage from './pages/home.page/HomePage'
 import AboutPage from './pages/about.page/AboutPage'
 import ConatctPage from './pages/contact.page/ContactPage'
+import Completed from './pages/completed.page/Completed'
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ConatctPage />} />
+        <Route path="/contact-us" element={<ConatctPage />} />
+        <Route path="/completed" element={<Completed />} />
       </Routes>
     </>
   )

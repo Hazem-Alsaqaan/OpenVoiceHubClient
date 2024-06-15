@@ -1,16 +1,15 @@
-
 import SideBar from "../../components/side.bar/SideBar"
-import "./ContactPage.css"
+import "./Completed.css"
 
-const ContactPage = ()=>{
+const Completed = ()=>{
     return(
         <div className="container">
             <SideBar/>
             <div className="tasks-container">
-            <h1>ContactPage</h1>
+            <h1>completed</h1>
             </div>
         </div>
     )
 }
 
-export default ContactPage
+export default Completed

@@ -1,0 +1,18 @@
+.logo-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px
+}
+.logo-container .logo-picture{
+    width: 60px;
+    height: 60px;
+}
+.logo-container .logo-text{
+    color: var(--blackColor);
+    text-wrap: nowrap;
+}
+@media (max-width: 400px){
+    .logo-container .logo-text{
+        display: none;
+    }
+}

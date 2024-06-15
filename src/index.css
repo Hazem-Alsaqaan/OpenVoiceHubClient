@@ -11,6 +11,11 @@ html{
   --mainColor: rgb(59 130 246);
   --mainColor50: rgb(239 246 255);
   --mainColor100: rgb(219 234 254);
+  --mainColor200: rgb(191 219 254);
+  --mainColor300: rgb(147 197 253);
+  --mainColor400: rgb(96 165 250);
+  --mainColor600: rgb(37 99 235);
+  --mainColor700: rgb(29 78 216);
   --secondColor: rgb(239 68 68);
   --secondColor50: rgb(254 242 242);
   --secondColor100: rgb(254 226 226);
@@ -28,15 +33,15 @@ html{
   --blackColor: #000000;
 }
 body{
-  margin: 0;
-  padding: 0;  
+  margin: 0px;
+  padding: 0px;  
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6, p{
   margin: 0;
 }
 ul{
@@ -49,5 +54,5 @@ a{
   color: black;
 }
 a:hover{
-  color: blueviolet;
+  color: inherit;
 }
