@@ -15,7 +15,7 @@ const SideBar = () => {
                 <ul className="side-links">
                     <li>
                         
-                        <NavLink to={"/"} end><BsListTask /> <p>tasks</p></NavLink>
+                        <NavLink  to={"/"} end><BsListTask /> <p>tasks</p></NavLink>
                     </li>
                     <li>
                        

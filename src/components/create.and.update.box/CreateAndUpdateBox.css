@@ -1,0 +1,54 @@
+.create-and-update-box{
+    position: absolute;
+    top: calc(50% - 125px);
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    z-index: 10000;
+    background-color: var(--whiteColor);
+    border-radius: 8px;
+    box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.1), 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.create-and-update-box .upper-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.create-and-update-box .upper-side svg{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--blackColor);
+}
+.create-and-update-box p{
+    color: var(--mainColor);
+    text-transform: capitalize;
+    font-weight: bold;
+    /* text-align: center; */
+}
+.create-and-update-box input[type = "text"],
+.create-and-update-box textarea{
+    background-color: var(--gray50);
+    border: none;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin: 8px 0px;
+    max-width: 100%;
+    max-height: 120px;
+}
+.create-and-update-box textarea{
+    min-height: 100px;
+    min-width: 80%;
+}
+.create-and-update-box input[type = "text"]:focus,
+.create-and-update-box textarea:focus{
+    outline-color: var(--mainColor400);
+}
+@media (max-width: 625px){
+    .create-and-update-box{
+        top: 200px;
+        width: 200px;
+        left: calc(50% - 100px);
+    }
+}

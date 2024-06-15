@@ -11,7 +11,7 @@
     color: var(--blackColor);
     text-wrap: nowrap;
 }
-@media (max-width: 400px){
+@media (max-width: 420px){
     .logo-container .logo-text{
         display: none;
     }

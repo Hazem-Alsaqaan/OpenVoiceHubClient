@@ -1,11 +1,11 @@
 .side-bar{
     background-color: var(--gray50);
-    padding: 15px;
+    padding: 15px 8px;
 }
 
 .side-bar .side-links li {
     margin-bottom: 16px;
-    padding: 5px;
+    padding: 3px;
 }
 .side-bar .side-links li a{
     display: flex;
@@ -14,16 +14,19 @@
 .side-bar .side-links li a p{
     margin-left: 3px;
 }
+.side-bar .side-links li a.active{
+    color: var(--mainColor400);
+}
 .side-bar .side-links li a:hover{
     color: var(--mainColor400);
     transition-duration: 300ms;
 }
-@media(max-width:400px){
+@media(max-width:420px){
     .side-bar .side-links li a p{
         display: none;
     }
     .side-bar .side-links li a svg{
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
     }
 }

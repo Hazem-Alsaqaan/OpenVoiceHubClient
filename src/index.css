@@ -17,9 +17,11 @@ html{
   --mainColor600: rgb(37 99 235);
   --mainColor700: rgb(29 78 216);
   --secondColor: rgb(239 68 68);
+  --secondColor400: rgb(248 113 113);
   --secondColor50: rgb(254 242 242);
   --secondColor100: rgb(254 226 226);
-  --thirdColor: rgb(250 204 21);
+  --thirdColor: rgb(234 179 8);
+  --thirdColor400: rgb(250 204 21);
   --thirdColor100: rgb(254 249 195);
   --fourthColor: rgb(16 185 129);
   --fourthColor100: rgb(209 250 229);;

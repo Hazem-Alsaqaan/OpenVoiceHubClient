@@ -2,13 +2,14 @@
     flex-grow: 1;
     background-color: var(--whiteColor);
     padding: 15px;
-
+    position: relative;
 }
 .tasks-container .to-side{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 15px 0px;
 }
 .tasks-container .task-boxes-container{
     display: grid;

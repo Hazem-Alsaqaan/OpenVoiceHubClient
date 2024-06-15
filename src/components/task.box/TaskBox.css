@@ -12,10 +12,7 @@
     flex-direction: column;
     overflow: auto;
 }
-.box-container:hover{
-    transform: scale(1.05);
-    transition-duration: 500ms;
-}
+
 .box-container > h1{
     flex-grow: 2;
     display: flex;
@@ -34,6 +31,25 @@
 .box-container h6.completed{
     color: var(--fourthColor);
 }
+.box-container:hover h6{
+    font-size: 12px;
+    transition-duration: 500ms;
+}
 .box-container h6.notcompleted{
-    color: var(--secondColor);
+    color: var(--mainColor300);
+}
+.btn-container{
+    margin: 5px 0px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.set-completed-container, 
+.set-completed-container div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.set-completed-container div svg{
+    color: var(--fourthColor);
 }
