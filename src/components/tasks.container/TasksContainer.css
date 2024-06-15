@@ -4,7 +4,12 @@
     padding: 15px;
 
 }
-
+.tasks-container .to-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .tasks-container .task-boxes-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
