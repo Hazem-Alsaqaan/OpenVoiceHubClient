@@ -33,9 +33,12 @@ html{
   --gray500: rgb(115 115 115);
   --whiteColor: #ffffff;
   --blackColor: #000000;
-  --toastify-color-error: rgba(191, 219, 254, 0.815);
+  --toastify-color-error: rgba(254, 226, 226, 0.815);
   --toastify-text-color-error: #000;
+  --toastify-color-success: rgba(191, 219, 254, 0.815);
+  --toastify-text-color-success: #000;
 }
+
 body{
   margin: 0px;
   padding: 0px;  

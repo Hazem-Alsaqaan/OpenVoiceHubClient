@@ -27,6 +27,7 @@ export const createNewTask = createAsyncThunk("task/createNewTask", async(item, 
             description: item?.description,
             completed: item?.completed
         })
+        toast.success("Success add new task")
         return response.data
     }catch(err){
         if(err.message === "Network Error"){
@@ -47,6 +48,7 @@ export const updateTask = createAsyncThunk("task/updateTask", async(item, thunkA
             description: item?.description,
             completed: item?.completed
         })
+        toast.success("Success update task")
         return response.data
     }catch(err){
         if(err.message === "Network Error"){
@@ -63,6 +65,7 @@ export const deleteTask = createAsyncThunk("task/deleteTask", async(item, thunkA
     const {rejectWithValue} = thunkApi
     try{
         const response = await axios.delete(`http://localhost:4001/api/v1/openvoicehub/taskes/${item?.id}`)
+        toast.success("Success delete task")
         return response.data
     }catch(err){
         if(err.message === "Network Error"){

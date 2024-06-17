@@ -1,0 +1,52 @@
+.welcome-message-container{
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    overflow: hidden;
+}
+.welcome-message-container::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/free-vector/abstract-connections-banner-design_1048-10068.jpg?t=st=1718643998~exp=1718647598~hmac=a8209c826d83e8dc9c79ef5774e3c274f8530f861d291d5d7c41f25ea239fb08&w=996");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 35%;
+}
+
+.welcome-message-container h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+.welcome-message-container h1 span{
+    color: var(--mainColor);
+}
+.welcome-message-container p{
+    text-align: center;
+    color: var(--gray500);
+    font-size: 15px;
+    font-weight: 500;
+}
+@media (max-width: 571px){
+    .welcome-message-container{
+        padding: 8px;
+    }
+    .welcome-message-container h1{
+        font-size: 22px;
+    }
+    .welcome-message-container p{
+        font-size: 11px;
+    }
+}

@@ -30,7 +30,7 @@ const TaskBox = ({ item }) => {
     return (
         <>
             <div className="box-container">
-                <h1>{item?.title}</h1>
+                <h3>{item?.title}</h3>
                 <div className="single-box-content-container">
                     <p className="description">{item?.description}</p>
                     <div className="set-completed-container">

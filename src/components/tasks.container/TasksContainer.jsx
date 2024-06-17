@@ -3,12 +3,14 @@ import "./TasksContainer.css"
 import Search from "../search/Search"
 import CreationButton from "../creation.button/CreationButton"
 import { useSelector } from "react-redux"
+import WelcomeMessage from "../welcome.message/WelcomeMessage"
 
 
 const TasksContainer = () => {
     const {tasks, tasksLoading} = useSelector((state)=>state.taskSlice)
     return (
         <div className="tasks-container">
+            <WelcomeMessage/>
             <div className="to-side">
                 <Search />
                 <CreationButton />
