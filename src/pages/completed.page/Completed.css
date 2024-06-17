@@ -1,0 +1,18 @@
+.completed-tasks-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+/* .completed-tasks-container .box-container {
+    display: flex;
+    flex-direction: row;
+}
+.completed-tasks-container .box-container .single-box-content-container{
+    flex-grow: 2;
+}
+.completed-tasks-container .box-container .single-box-content-container .set-completed-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+} */

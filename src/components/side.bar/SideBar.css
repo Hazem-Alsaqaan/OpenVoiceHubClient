@@ -22,11 +22,13 @@
     transition-duration: 300ms;
 }
 @media(max-width:420px){
+    .side-bar .side-links li a{
+        flex-direction: column;
+    }
     .side-bar .side-links li a p{
-        display: none;
+        font-size: 10px;
     }
     .side-bar .side-links li a svg{
-        width: 24px;
-        height: 24px;
+        font-size: 22px;
     }
 }

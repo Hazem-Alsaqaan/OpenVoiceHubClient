@@ -4,7 +4,8 @@ const publicVariablesSlice = createSlice({
     name: "publicVariables",
     initialState:{
         settingBoxVisible: false,
-        moodButton: ""
+        moodButton: "",
+        render: false
     },
     reducers:{
         toggleSettingBoxVisible(state){
@@ -12,9 +13,12 @@ const publicVariablesSlice = createSlice({
         },
         setMoodButton(state, action){
             state.moodButton = action.payload
+        },
+        setRender:(state)=>{
+            state.render = !state.render
         }
     }
 })
 
-export const {toggleSettingBoxVisible, setMoodButton} = publicVariablesSlice.actions
+export const {toggleSettingBoxVisible, setMoodButton, setRender} = publicVariablesSlice.actions
 export default publicVariablesSlice.reducer
