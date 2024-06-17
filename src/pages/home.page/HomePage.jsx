@@ -6,30 +6,30 @@ import { getAllTasks } from "../../redux/actions/tasksActions"
 import { Outlet } from "react-router-dom"
 import { ToastContainer } from "react-toastify"
 
-const HomePage = ()=>{
-    const {render} = useSelector((state)=>state.publicVariablesSlice)
+const HomePage = () => {
+    const { render } = useSelector((state) => state.publicVariablesSlice)
 
     const dispatch = useDispatch()
 
-  
-    useEffect(()=>{
+
+    useEffect(() => {
         dispatch(getAllTasks())
-    },[dispatch, render])
-    return(
+    }, [dispatch, render])
+    return (
         <div className="home-page container">
-            <SideBar/>
-            <Outlet/>
+            <SideBar />
+            <Outlet />
             <ToastContainer
-            position="top-center"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="colored"
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
             />
         </div>
     )

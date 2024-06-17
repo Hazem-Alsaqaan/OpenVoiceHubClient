@@ -29,10 +29,8 @@
     color: var(--mainColor);
     text-transform: capitalize;
     font-weight: bold;
-    /* text-align: center; */
 }
-.create-and-update-box input[type = "text"],
-.create-and-update-box textarea{
+.form-input{
     background-color: var(--gray50);
     border: none;
     border-radius: 12px;
@@ -41,12 +39,11 @@
     max-width: 100%;
     max-height: 120px;
 }
-.create-and-update-box textarea{
+.text-area-message{
     min-height: 100px;
     min-width: 80%;
 }
-.create-and-update-box input[type = "text"]:focus,
-.create-and-update-box textarea:focus{
+.form-input:focus{
     outline-color: var(--mainColor400);
 }
 @media (max-width: 625px){
