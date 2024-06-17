@@ -6,7 +6,7 @@ import { useSelector } from "react-redux"
 
 
 const TasksContainer = () => {
-    const {tasks} = useSelector((state)=>state.taskSlice)
+    const {tasks, tasksLoading} = useSelector((state)=>state.taskSlice)
     return (
         <div className="tasks-container">
             <div className="to-side">
@@ -14,10 +14,11 @@ const TasksContainer = () => {
                 <CreationButton />
             </div>
             <div className="task-boxes-container">
-                {
-                    tasks.map((item)=>(
+                { tasksLoading ? <h4>loading...</h4>
+                   : tasks.length > 0 ? tasks.map((item)=>(
                         <TaskBox key={item?._id} item = {item}/>
                     ))
+                    : <h4>No tasks found...</h4>
                 }        
             </div>
         </div>

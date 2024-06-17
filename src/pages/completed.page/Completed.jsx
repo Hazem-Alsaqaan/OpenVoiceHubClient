@@ -4,6 +4,7 @@ import "./Completed.css"
 import { useDispatch, useSelector } from "react-redux"
 import { getAllTasks } from "../../redux/actions/tasksActions"
 import TaskBox from "../../components/task.box/TaskBox"
+import { ToastContainer } from "react-toastify"
 
 const Completed = ()=>{
     const dispatch = useDispatch()
@@ -18,6 +19,7 @@ const Completed = ()=>{
         )))
     },[dispatch, render, tasks])
     return(
+    <>
         <div className="container">
             <SideBar/>
             <div className="tasks-container">
@@ -31,6 +33,19 @@ const Completed = ()=>{
             </div>
             </div>
         </div>
+        <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+            />
+            </>
     )
 }
 

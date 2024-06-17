@@ -5,7 +5,7 @@ import CreationButton from "../../components/creation.button/CreationButton"
 
 
 const SearchResult = () => {
-    const { searchTasks } = useSelector((state) => state.taskSlice)
+    const { searchTasks , searchTasksLoading} = useSelector((state) => state.taskSlice)
     return (
         <div className="tasks-container">
             <div className="to-side">
@@ -13,10 +13,11 @@ const SearchResult = () => {
                 <CreationButton />
             </div>
             <div className="task-boxes-container">
-                {
-                    searchTasks.map((item) => (
+            { searchTasksLoading ? <h4>loading...</h4>
+                    : searchTasks.length > 0 ? searchTasks.map((item) => (
                         <TaskBox key={item?._id} item={item} />
                     ))
+                    : <h4>No tasks found...</h4>
                 }
             </div>
         </div>

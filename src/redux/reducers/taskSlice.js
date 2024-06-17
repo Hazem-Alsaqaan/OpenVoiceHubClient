@@ -22,6 +22,7 @@ const taskSlice = createSlice({
         // start read all task action handler
         builder.addCase(getAllTasks.pending, (state)=>{
             state.tasksLoading = true
+            state.tasksError = null
         }),
         builder.addCase(getAllTasks.fulfilled, (state, action)=>{
             state.tasksLoading = false
@@ -34,6 +35,7 @@ const taskSlice = createSlice({
         // start update action handler
         builder.addCase(updateTask.pending, (state)=>{
             state.tasksLoading = true
+            state.tasksError = null
         }),
         builder.addCase(updateTask.fulfilled, (state)=>{
             state.tasksLoading = false
@@ -45,6 +47,7 @@ const taskSlice = createSlice({
         // start create a new task handler
         builder.addCase(createNewTask.pending, (state)=>{
             state.tasksLoading = true
+            state.tasksError = null
         }),
         builder.addCase(createNewTask.fulfilled, (state)=>{
             state.tasksLoading = false
@@ -56,6 +59,7 @@ const taskSlice = createSlice({
         // start delete action handler
         builder.addCase(deleteTask.pending, (state)=>{
             state.tasksLoading = true
+            state.tasksError = null
         }),
         builder.addCase(deleteTask.fulfilled, (state)=>{
             state.tasksLoading = false
@@ -67,9 +71,10 @@ const taskSlice = createSlice({
         // start search action handler
         builder.addCase(searchTasks.pending, (state)=>{
             state.searchTasksLoading = true
+            state.searchTasksError = null
         }),
         builder.addCase(searchTasks.fulfilled, (state, action)=>{
-            state.tasksLoading = false
+            state.searchTasksLoading = false
             state.searchTasks = action.payload
         }),
         builder.addCase(searchTasks.rejected, (state, action)=>{
