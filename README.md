@@ -7,7 +7,7 @@
 (https://github.com/Hazem-Alsaqaan/OpenVoiceHubServer)
 
 ## description application**
-- simple and user-driendly web application for task creation and management , you can create , edit , delete and categorize tasks to find whate you need quicly.
+- simple and user-friendly web application for task creation and management , you can create , edit , delete , categorize completed tasks and search by task name to find whate you need quicly.
 
 
 ## About Task
