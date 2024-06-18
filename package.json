@@ -1,7 +1,7 @@
 {
-  "homepage": "https://Hazem-Alsaqaan.github.io/OpenVoiceHubClient",
   "name": "openvoicehubclienttask",
   "private": true,
+  "homepage": "https://Hazem-Alsaqaan.github.io/OpenVoiceHubClient",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
