@@ -6,7 +6,7 @@
 **description application**
 - simple and user-driendly web application for task creation and management , you can create , edit , delete and categorize tasks to find whate you need quicly.
 
-**first you can visit server side code repository at github which I do it specific for this task using node-js , express and mongodg**
+- **first you can visit server side code repository at github which I do it specific for this task using node-js , express and mongodb**
 (https://github.com/Hazem-Alsaqaan/OpenVoiceHubServer)
 
 ## About Task
