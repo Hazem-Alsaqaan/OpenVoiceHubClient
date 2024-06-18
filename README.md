@@ -6,7 +6,7 @@
 - **first you can also visit server side code repository at github which I do it specific for this task using node.js , express and mongodb**
 (https://github.com/Hazem-Alsaqaan/OpenVoiceHubServer)
 
-## description application
+## app summary
 - simple and user-friendly web application for task creation and management , you can create , edit , delete , categorize completed tasks and search by task name to find whate you need quicly.
 
 
