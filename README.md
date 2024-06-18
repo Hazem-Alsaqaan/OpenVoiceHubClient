@@ -1,6 +1,6 @@
 ### open voice hub task manager
 # Hello & Welcome
-- **vist live demo app**
+- **visit live demo app**
 (https://hazem-alsaqaan.github.io/OpenVoiceHubClient/)
 
 - **first you can also visit server side code repository at github which I do it specific for this task using node.js , express and mongodb**
