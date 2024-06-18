@@ -7,16 +7,17 @@ import { BsCheckSquareFill } from "react-icons/bs";
 import "./TaskBox.css"
 import { setMoodButton, setRender, toggleSettingBoxVisible } from "../../redux/reducers/publicVariablesSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteTask, getAllTasks, updateTask } from "../../redux/actions/tasksActions";
+import { deleteTask, updateTask } from "../../redux/actions/tasksActions";
 import CreateAndUpdateBox from "../create.and.update.box/CreateAndUpdateBox";
 import { setUpateItem } from "../../redux/reducers/taskSlice";
 
 const TaskBox = ({ item }) => {
-    const { settingBoxVisible } = useSelector((state) => state.publicVariablesSlice)
     const dispatch = useDispatch()
+    const { settingBoxVisible } = useSelector((state) => state.publicVariablesSlice)
+
     const updateCompletedStatus = () => {
         dispatch(updateTask({ id: item?._id, title: item?.title, description: item?.description, completed: item?.completed ? false : true }))
-        dispatch(getAllTasks())
+        dispatch(setRender(true))
     }
     const handleUpdate = (item) => {
         dispatch(setMoodButton("update"))
@@ -25,7 +26,7 @@ const TaskBox = ({ item }) => {
     }
     const handleDelete = (item) => {
         dispatch(deleteTask({ id: item?._id }))
-        dispatch(setRender())
+        dispatch(setRender(true))
     }
     return (
         <>

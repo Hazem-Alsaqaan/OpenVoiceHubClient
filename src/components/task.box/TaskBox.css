@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: center;
     color: var(--mainColor);
+    text-overflow: ellipsis;
 }
 .box-container div{
     flex-grow: 1;
@@ -27,6 +28,7 @@
     color: var(--gray500);
     font-size: 12px;
     margin: 10px 0px;
+    text-overflow:ellipsis;
 }
 .box-container h6.completed{
     color: var(--fourthColor);

@@ -20,7 +20,7 @@ const CreateAndUpdateBox = () => {
     const createNewTaskSubmit = (e) => {
         e.preventDefault()
         dispatch(createNewTask({ title: title, description: description, completed: false }))
-        dispatch(setRender())
+        dispatch(setRender(true))
         dispatch(toggleSettingBoxVisible())
         setTitle("")
         setDescription("")
@@ -28,7 +28,7 @@ const CreateAndUpdateBox = () => {
     const handleUpdateSubmit = (e) => {
         e.preventDefault()
         dispatch(updateTask({ id: updateItem?._id, title: title, description: description, completed: updateItem?.completed }))
-        dispatch(setRender())
+        dispatch(setRender(true))
         dispatch(toggleSettingBoxVisible())
         setTitle("")
         setDescription("")
@@ -41,21 +41,21 @@ const CreateAndUpdateBox = () => {
             </div>
             <form onSubmit={moodButton === "create" ? (e) => createNewTaskSubmit(e) : (e) => handleUpdateSubmit(e)}>
                 <input
-                  className="form-input"
+                    className="form-input"
                     required
                     type="text"
-                    placeholder="Title..."
+                    placeholder="* Title..."
                     onChange={(e) => setTitle(e.target.value)}
                     value={title}
                     maxLength={40}
                 />
                 <textarea
-                className="text-area-message form-input"
+                    className="text-area-message form-input"
                     required
                     onChange={(e) => setDescription(e.target.value)}
                     value={description}
                     maxLength={80}
-                    placeholder="description..."></textarea>
+                    placeholder="* description..."></textarea>
                 <CustomButton title={moodButton} icon={moodButton === "create" ? <MdOutlineAddToPhotos /> : <FaRegEdit />} />
             </form>
         </div>

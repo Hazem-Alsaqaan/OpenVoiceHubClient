@@ -11,7 +11,7 @@ const Search = () => {
     const [searchText, setSearchText] = useState("")
     const dispatch = useDispatch()
     const handleSearchSubmit = ()=>{
-        navigate("search")
+        navigate("/search")
         dispatch(searchTasks({title: searchText}))
         setSearchText("")
     }
@@ -21,7 +21,7 @@ const Search = () => {
             <LuSearch className="search-icon"/>
                 <input
                     type="search"
-                    placeholder="search..."
+                    placeholder="search by task name..."
                     onChange={(e)=>setSearchText(e.target.value)}
                     value={searchText}
                     />

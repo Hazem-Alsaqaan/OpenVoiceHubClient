@@ -14,8 +14,8 @@ const publicVariablesSlice = createSlice({
         setMoodButton(state, action){
             state.moodButton = action.payload
         },
-        setRender:(state)=>{
-            state.render = !state.render
+        setRender:(state, action)=>{
+            state.render = action.payload
         }
     }
 })
