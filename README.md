@@ -13,7 +13,7 @@
 ## About Task
 **Core Technologies used** 
 * React.js: provides a resposive and dynamic user interface for an optimal user experience
-* react-redux and redux-toolkit: to manage global application's states with simplified stateand ensuring data consistency
+* react-redux and redux-toolkit: to manage global application's states with simplified state and ensuring data consistency
 * react-router-dom: enables smooth navigation across different views ,pages and components
 * Axios to fetch data
 * react-toastify and react-icon : improve designs and UI
